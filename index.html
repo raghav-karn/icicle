@@ -1,150 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <head>
+      <title>Butter Pecan Ice Cream | Icicle</title>
+      <link rel="icon" type="image/x-icon" href="src/images/logo.png">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="src/css/style.css">
 
-    <link rel="icon" type="image/x-icon" href="src/images/logo.png">
-    <title>Butter Pecan Ice Cream | Icicle</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Doto:wght@100..900&family=Major+Mono+Display&display=swap" rel="stylesheet">    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/style.css">
-</head>
-<body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="src/images/logo.png" alt="">
-            </a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="https://raghavkarn.com" class="nav__link">Raghav Karn</a>
-                    </li>
-                </ul>
-            </div>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Doto:wght@100..900&family=Major+Mono+Display&display=swap" rel="stylesheet">    
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    </head>
+    
+    <body>
+      <header class="container">
+        <a href="https://raghavkarn.com" target="_blank" class="logo clr-transition">Raghav Karn</a>
+        <nav class="navbar">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="#hero" class="nav-link clr-transition">Home</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link clr-transition">Images of Yummies</a></li>
+            <li class="nav-item"><a href="#recipe" class="nav-link clr-transition">Short recipe</a></li>
+          </ul>
         </nav>
-    </header>
-
-    <main class="main">
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div>
-                    <img src="src/images/eis.jpg" alt="" class="home__img">
-                </div>
-                
-                <div class="home__data">
-                    <div class="home__header">
-                        <h2 class="home__subtitle" style="font-size: 5.5rem; color: #2b2611;">Icicle</h2>
-                    </div>
-
-                    <div class="home__footer">
-                        <h3 class="home__title-description"><i>Recipe of the day:</i> <strong>Butter Pecan Ice Cream</strong></h3>
-                        <p class="home__description">
-                            <i>Ingredients:</i> 2 cups heavy cream, 1 cup whole milk, 3/4 cup brown sugar, 1/2 cup chopped pecans, 1 tsp vanilla extract, pinch of salt.
-                            <br><br>
-                            <i>Instructions:</i> In a bowl, whisk together cream, milk, sugar, vanilla, and salt. Stir in pecans. Pour into an ice cream maker and churn according to manufacturer's instructions. Freeze until firm.
-                        </p>
-
-                        <a href="https://www.allrecipes.com/recipe/21105/butter-pecan-ice-cream/" class="button button--flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cursor-fill" viewBox="0 0 16 16">
-                                <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
-                              </svg>
-                            Read the full recipe!
-                        </a>            
-                    </div>
-                </div>
+    
+      </header>
+      <main id="hero" class="main">
+        <section class="section section-one">
+          <div class="container hook-container">
+            <h1 class="hook-title clr-transition">Icicle</h1>
+            <h2 class="hook-sub_title clr-transition">Recipe of the day: Butter Pecan Ice Cream</h2>
+            <div class="hero-btns-container">
+              <button class="button btn-hero btn-primary buy-hero-btn"><i class="bx bx-cart in-btn-icon"></i> Read short recipe </button>
+              <button class="button btn-hero btn-second-alt"><i class="bx bx-map in-btn-icon"></i> Visit recipe's site </button>
             </div>
+          </div>
+          <img src="src/images/eis.png" class="hero-lady-img" loading="lazy">
         </section>
-
-        <section class="features section grid" id="features">
-            <h2 class="section__title">Why Butter Pecan?</h2>
-
-            <div class="features__container container grid">
-                <div class="features__content grid">
-                    <div class="features__data">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg>
-                        <h3 class="features__title">Rich Flavor</h3>
-                        <span class="features__subtitle">Caramelized butter notes</span>
-                    </div>
-
-                    <div class="features__data">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-nut-fill" viewBox="0 0 16 16">
-                            <path d="M4.765 1.5c-.196-.466-.723-.466-.92 0l-.75 1.5C2.989 3.26 2.109 3.5 1.5 3.5c-.519 0-.982-.334-1.171-.789l-.03-.09a1.05 1.05 0 0 1 .022-.828c.116-.277.272-.528.459-.745C1.005.784 1.653.5 2.5.5c.981 0 1.825.378 2.375 1 .55-.622 1.394-1 2.375-1 .847 0 1.495.284 1.72.823.187.217.343.468.459.745.115.274.12.569.022.828l-.03.09C9.231 3.166 8.768 3.5 8.249 3.5c-.609 0-1.488-.24-1.595-.499l-.75-1.5Z"/>
-                            <path d="M6 4.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2h4zm1 0h4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2z"/>
-                        </svg>                    
-                        <h3 class="features__title">Toasted Pecans</h3>
-                        <span class="features__subtitle">Crunchy texture contrast</span>
-                    </div>
-
-                    <div class="features__data">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet-fill" viewBox="0 0 16 16">
-                            <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6M6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z"/>
-                        </svg>                      
-                        <h3 class="features__title">Creamy Base</h3>
-                        <span class="features__subtitle">Smooth silky texture</span>
-                    </div>
-
-                    <div class="features__data">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
-                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501m-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535m-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8 8 0 0 1-.401.432l-.707-.707z"/>
-                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/>
-                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/>
-                        </svg>                      
-                        <h3 class="features__title">Southern Classic</h3>
-                        <span class="features__subtitle" style="margin-bottom: 3rem;">Timeless favorite recipe</span>
-                    </div>
-                </div>
-                
-                <div>
-                    <img src="src/images/eis2.jpg" alt="" class="features__img">
-                </div>
+    
+        <section id="gallery" class="section section-two container">
+          <div class="s-two-upper-info">
+            <h2 class="s-two-slogan">This homemade butter pecan ice cream is a creamy, excellent summertime treat!</h2>
+            <p class="s-two-definition s-definition">
+              Adore its rich flavor with caramelized butter notes, the roasted pecans which add a CRONCH to it's buttery smooth texture. Mastered, tested and tasted over the years to perfection!
+            </p>
+          </div>
+          <div class="s-two-products">
+            <div class="product product-one">
+              <img src="src/images/eis3.jpg" loading="lazy">
             </div>
+            <div class="product product-two">
+              <img src="src/images/eis2.jpg" loading="lazy">
+            </div>
+            <div class="product product-three">
+              <img src="src/images/eis1.jpg" loading="lazy">
+            </div>
+          </div>
         </section>
-
-    </main>
-
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <span style="font-family: 'major mono display'; color: #29230a; font-size: 3rem; margin-right: 5rem; margin-left: -5rem;">Icicle <br> <span style="font-size: 1rem;"><a href="https://github.com" style="color: #29230a;">Raghav Karn — 2025</a></span></span>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Quick Links</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="https://icicle.raghavkarn.com" class="footer__link">Home</a>
-                    </li>
-                    <li>
-                        <a href="https://www.allrecipes.com/recipe/21105/butter-pecan-ice-cream/" class="footer__link">Recipe</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-            </div>
-
-            <div class="footer__content">
-                <a href="https://github.com/raghav-karn/icicle" target="_blank" class="footer__button-link">
-                    <button class="button button--flex" style="background-color: #29230a; color: #eeeaad; font-family: monospace; margin-bottom: 1rem;">
-                        <i class="ri-send-plane-line button__icon"></i> Visit the GitHub Repository
-                    </button>
-                </a>    
+    
+        <section id="recipe" class="section section-three container">
+          <div class="s-three-upper-img-container">
+            <img src="src/images/eis4.jpg" alt="" loading="lazy">
+          </div>
+          <div class="s-three-lower-container">
+            <h3 class="s-three-title">Drooling? Why not make it at home!</h3>
+            <p class="s-three-desc s-definition"> 
+              <i>Ingredients:</i> 2 cups heavy cream, 1 cup whole milk, 3/4 cup brown sugar, 1/2 cup chopped pecans, 1 tsp vanilla extract, pinch of salt.
+              <br><br>
+              <i>Instructions:</i> In a bowl, whisk together cream, milk, sugar, vanilla, and salt. Stir in pecans. Pour into an ice cream maker and churn according to manufacturer's instructions. Freeze until firm.
+            </p>
+            <a href="https://www.allrecipes.com/recipe/21105/butter-pecan-ice-cream/" target="_blank"><button class="button ad-buy-btn">Full recipe</button></a>
+          </div>
+        </section>
             
-                <div class="footer__social">
-                    <a href="https://github.com/raghav-karn" target="_blank" class="footer__social-link">
-                        <i class="ri-github-fill" style="color: #bda93b;"></i>
-                    </a>
-                    <a href="mailto:contact@raghavkarn.com" target="_blank" class="footer__social-link">
-                        <i class="ri-mail-line" style="color: #bda93b;"></i>
-                    </a>
-                </div>
-            </div>
+        <div class="other-footer-infos-container">
         </div>
-    </footer>
-</body>
+        <div class="lower-footer">
+          <span class="footer-info"><i class="bx bx-heart"></i>Made by <a href="https://github.com/raghav-karn" style="color:aquamarine">Raghav Karn</a></span>
+          <span class="footer-info"><i class="bx bx-laptop"></i>For <a href="https://toppings.hackclub.com" style="color: aqua" target="_blank">Hack Club Toppings</a></span>
+          <span class="footer-info"><i class="bx bx-mail-send"></i><a href="mailto:contact@raghavkarn.com" style="color:aqua">contact@raghavkarn.com</a></span>
+        </div>
+      </footer>
+    </body>
+</html>
