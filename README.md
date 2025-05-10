@@ -3,7 +3,7 @@
 Welcome to the [**Icicle**](https://icicle.raghavkarn.com)! A [Toppings](toppings.hackclub.com) project that celebrates the deliciousness of butter pecan ice cream.
 
 ## Preview
-![Preview](src/images/preview.png)
+![Preview](src/images/preview.jpeg)
 
 ## Features
 
